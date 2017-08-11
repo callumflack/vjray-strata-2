@@ -12,6 +12,6 @@ You will notice, however, that the display font _did not render_. The styled-com
 
 The answer probably lies in the fact I've assigned the display font to the headline styled-components… Works locally!
 
-To run locally:
-$ npm i
-then $ npm run dev
+To run locally: $ npm i
+
+…then $ npm run dev
