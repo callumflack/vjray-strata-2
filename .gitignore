@@ -73,6 +73,7 @@ typings/
 
 ### Next.js ###
 .next
+client/.next
 
 # Export
 out
