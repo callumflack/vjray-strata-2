@@ -27,7 +27,11 @@ const theme = {
     success: '#42db41',
     error: '#D91E1F'
   },
-  font: 'GT-Eesti-Pro-Text'
+  font: 'GT-Eesti-Pro-Text',
+  weights: [
+    200,
+    500
+  ]
 }
 
 export default ({ children, title = 'VJ Ray Strata, Sydney' }) => (

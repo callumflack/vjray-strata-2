@@ -12,12 +12,12 @@ import {
 
 const StyledHeading = styled(Heading)`
   line-height: 1;
-  font-family: ${displayFont}-Regular;
+  font-family: ${displayFont};
   font-weight: 400;
 `
 
 const StyledSubhead = styled(Subhead)`
-  font-family: ${displayFont}-Light;
+  font-family: ${displayFont};
   font-weight: 200;
   line-height: ${lineHeight.subhead}
 `
@@ -25,7 +25,7 @@ const StyledSubhead = styled(Subhead)`
 const OverheadRoot = styled(Subhead)`
   border-bottom: 1px solid currentColor;
   display: inline-block;
-  font-family: ${displayFont}-Medium;
+  font-family: ${displayFont};
   font-weight: 500;
   letter-spacing: ${letterSpacing.touch};
   line-height: 1;

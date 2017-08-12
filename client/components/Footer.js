@@ -36,8 +36,7 @@ const List = styled(Box)`
   }
 
   span {
-    font-weight: ${fontWeights[4]};
-    font-weight: ${fontWeights[5]};
+    font-weight: 500;
   }
 `;
 

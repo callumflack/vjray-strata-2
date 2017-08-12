@@ -80,7 +80,7 @@ img {
 
 @font-face {
   font-family: 'GT-Eesti-Pro-Text';
-  font-weight: '700';
+  font-weight: 700;
   font-style: normal;
   src: url('/static/fonts/GT-Eesti-Pro-Text-Bold.woff');
   src: local('GT-Eesti-Pro-Text-Bold'), local('GT-Eesti-Pro-Text-Bold'),
@@ -89,7 +89,7 @@ img {
 
 @font-face {
   font-family: 'GT-Eesti-Pro-Text';
-  font-weight: '500';
+  font-weight: 500;
   font-style: normal;
   src: url('/static/fonts/GT-Eesti-Pro-Text-Medium.woff');
   src: local('GT-Eesti-Pro-Text-Medium'), local('GT-Eesti-Pro-Text-Medium'),
@@ -98,7 +98,7 @@ img {
 
 @font-face {
   font-family: 'GT-Eesti-Pro-Text';
-  font-weight: '400';
+  font-weight: 400;
   font-style: normal;
   src: url('/static/fonts/GT-Eesti-Pro-Text-Regular.woff');
   src: local('GT-Eesti-Pro-Text-Regular'), local('GT-Eesti-Pro-Text-Regular'),
@@ -107,7 +107,7 @@ img {
 
 @font-face {
   font-family: 'GT-Eesti-Pro-Text';
-  font-weight: '300';
+  font-weight: 300;
   font-style: normal;
   src: url('/static/fonts/GT-Eesti-Pro-Text-Book.woff');
   src: local('GT-Eesti-Pro-Text-Book'), local('GT-Eesti-Pro-Text-Book'),
@@ -116,7 +116,7 @@ img {
 
 @font-face {
   font-family: 'GT-Eesti-Pro-Text';
-  font-weight: '200';
+  font-weight: 200;
   font-style: normal;
   src: url('/static/fonts/GT-Eesti-Pro-Text-Light.woff');
   src: local('GT-Eesti-Pro-Text-Light'), local('GT-Eesti-Pro-Text-Light'),
@@ -129,7 +129,7 @@ img {
 
 @font-face {
   font-family: 'GT-Eesti-Pro-Display';
-  font-weight: '500';
+  font-weight: 500;
   font-style: normal;
   src: url('/static/fonts/GT-Eesti-Pro-Display-Medium.woff');
   src: local('GT-Eesti-Pro-Display-Medium'),
@@ -138,7 +138,7 @@ img {
 
 @font-face {
   font-family: 'GT-Eesti-Pro-Display';
-  font-weight: '400';
+  font-weight: 400;
   font-style: normal;
   src: url('/static/fonts/GT-Eesti-Pro-Display-Regular.woff');
   src: local('GT-Eesti-Pro-Display-Regular'),
@@ -147,7 +147,7 @@ img {
 
 @font-face {
   font-family: 'GT-Eesti-Pro-Display';
-  font-weight: '200';
+  font-weight: 200;
   font-style: normal;
   src: url('/static/fonts/GT-Eesti-Pro-Display-Light.woff');
   src: local('GT-Eesti-Pro-Display-Light'),
@@ -156,7 +156,7 @@ img {
 
 @font-face {
   font-family: 'GT-Eesti-Pro-Display';
-  font-weight: '100';
+  font-weight: 100;
   font-style: normal;
   src: url('/static/fonts/GT-Eesti-Pro-Display-Thin.woff');
   src: local('GT-Eesti-Pro-Display-Thin'),

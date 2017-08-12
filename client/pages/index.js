@@ -18,7 +18,10 @@ import {
   StyledHeading,
   StyledSubhead
 } from '../components/Headline'
-import { StText } from '../components/Text'
+import {
+  StText,
+  StTextBook
+} from '../components/Text'
 import Footer from '../components/Footer'
 
 
@@ -35,9 +38,10 @@ const Test = (props) => (
         <Column w={[ 1, 7/12 ]} mx={-3}>
           <Overhead children='Info on the go' />
           <StyledHeading is='h1' color='brand' f={[ 6, 7 ]} mb={3} children='Strata forms and fact sheets.' />
-          <StyledSubhead color='text70' f={[ 4, 5 ]} children='Everything you might need to know about your Strata management.' />
-          <StText fontWeight={2} weight={2} children='This is styled rebass text.' />
-          <Text fontWeight={2} weight={2} children='This is just rebass text.' />
+          <StyledSubhead color='text70' f={[ 4, 5 ]} mb={3} children='Everything you might need to know about your Strata management.' />
+          <StText children='This is styled rebass text.' />
+          <StTextBook children='This is styled rebass text, book weight.' />
+          <Text bold children='This is rebass text with a bold attr themed to be weight 500.' />
         </Column>
       </Container>
     </StyledBanner>

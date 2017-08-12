@@ -11,9 +11,8 @@ import {
 
 // font-family: ${displayFont}-Light;
 // ${theme.space[4]}px
+// font-weight: ${fontWeights[1]};
 const StText = styled(Text)`
-  font-weight: 200;
-  font-weight: ${fontWeights[1]};
   letter-spacing: ${letterSpacing.text};
   line-height: ${lineHeight.text};
 
@@ -22,6 +21,12 @@ const StText = styled(Text)`
   `}
 `
 
+const StTextBook = styled(Text)`
+  font-weight: 300;
+`
+
+
 export {
   StText,
+  StTextBook,
 }
