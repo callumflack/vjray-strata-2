@@ -9,6 +9,16 @@ module.exports = {
     }
   },
   webpack: (cfg) => {
+    // cfg.modules.push(
+    //   module: {
+    //     rules: [{
+    //       test: /\.jsx$/,
+    //       exclude: /node_modules/,
+    //       loader: 'raw-loader'
+    //     }]
+    //   }
+    // );
+
     cfg.plugins.push(
       new webpack.DefinePlugin({
         'process.env.SERVER_URI': JSON.stringify(process.env.SERVER_URI),

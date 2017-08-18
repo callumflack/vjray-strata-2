@@ -26,6 +26,7 @@
     "prop-types": "15.5.10",
     "react": "15.6.1",
     "react-dom": "15.6.1",
+    "react-markdown": "^2.5.0",
     "rebass": "^1.0.3",
     "send": "0.15.3",
     "styled-components": "^2.1.2"
