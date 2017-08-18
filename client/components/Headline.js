@@ -10,13 +10,13 @@ import {
 } from '../components/constants'
 
 
-const StyledHeading = styled(Heading)`
+const StHeading = styled(Heading)`
   line-height: 1;
   font-family: ${displayFont};
   font-weight: 400;
 `
 
-const StyledSubhead = styled(Subhead)`
+const StSubhead = styled(Subhead)`
   font-family: ${displayFont};
   font-weight: 200;
   line-height: ${lineHeight.subhead}
@@ -27,7 +27,7 @@ const OverheadRoot = styled(Subhead)`
   display: inline-block;
   font-family: ${displayFont};
   font-weight: 500;
-  letter-spacing: ${letterSpacing.touch};
+  letter-spacing: ${letterSpacing.meta};
   line-height: 1;
   text-transform: uppercase;
 `
@@ -35,7 +35,7 @@ const OverheadRoot = styled(Subhead)`
 const Overhead = props =>
   <OverheadRoot
     is='h4'
-    color='brand'
+    color='text'
     f={[ 0, 1 ]}
     pb={2}
     mb={3}
@@ -44,7 +44,7 @@ const Overhead = props =>
   />
 
 export {
-  StyledHeading,
-  StyledSubhead,
+  StHeading,
+  StSubhead,
   Overhead
 }

@@ -9,24 +9,29 @@ import {
   lineHeight
 } from './constants'
 
-// font-family: ${displayFont}-Light;
-// ${theme.space[4]}px
 // font-weight: ${fontWeights[1]};
 const StText = styled(Text)`
-  letter-spacing: ${letterSpacing.text};
-  line-height: ${lineHeight.text};
+  ${props => props.displayFont && css`
+    font-family: ${displayFont};
+  `}
+
+  ${props => props.weight && css`
+    font-weight: ${fontWeights[props.weight] || fontWeights[1]};
+  `}
+
+  ${props => props.letterSpacing && css`
+    line-height: ${letterSpacing[props.letterSpacing] || letterSpacing.text};
+  `}
+
+  ${props => props.lineHeight && css`
+    line-height: ${lineHeight[props.lineHeight] || lineHeight.text};
+  `}
 
   ${props => props.uppercase && css`
     text-transform: uppercase;
   `}
-`
-
-const StTextBook = styled(Text)`
-  font-weight: 300;
-`
-
+`//`
 
 export {
-  StText,
-  StTextBook,
+  StText
 }

@@ -57,14 +57,9 @@ const Footer = (props) => (
         <Column mt={40} is='nav'>
           <Flex justify='flex-end'>
             <List is='p' color='text70'>
-              <Link href='/who-we-are'><a><span>Who we are</span></a></Link>
-              <Link href='/who-we-are'><a>Our story</a></Link>
-            </List>
-            <List is='p' color='text70'>
-              <Link href='/'><a><span>What we do for you</span></a></Link>
-              <Link href='/'><a>For tenants</a></Link>
-              <Link href='/'><a>For owners</a></Link>
-              <Link href='/'><a>For investors</a></Link>
+              <Link href='/who-we-are'><a><span>About us</span></a></Link>
+              <Link href='/who-we-are'><a>Who we are</a></Link>
+              <Link href='/what-we-do-for-you'><a>What we do for you</a></Link>
             </List>
             <List is='p' color='text70'>
               <Link href='/useful-info'><a><span>Useful info</span></a></Link>

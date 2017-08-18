@@ -10,6 +10,7 @@ import globalStyles from './global'
 const theme = {
   breakpoints: [32, 48, 64, 80, 96],
   fontSizes: [ 12, 14, 16, 19, 23, 30, 40, 54 ],
+  space: [0, 4, 8, 16, 32, 64, 128, 160],
   colors: {
     text: '#4a4a55',
     text70: '#818188',

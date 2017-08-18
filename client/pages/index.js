@@ -1,4 +1,7 @@
 import React from 'react'
+import Link from 'next/link';
+import gql from 'graphql-tag'
+// import apollo from '../../lib/apollo'
 import styled from 'styled-components'
 import {
   Banner,
@@ -11,43 +14,85 @@ import {
   Text,
   theme,
 } from 'rebass'
-import { displayFont } from '../components/constants'
+import {
+  bannerHeights,
+  colors,
+  displayFont
+} from '../components/constants'
 import Layout from '../components/Layout'
 import {
   Overhead,
-  StyledHeading,
-  StyledSubhead
+  StHeading,
+  StSubhead
 } from '../components/Headline'
-import {
-  StText,
-  StTextBook
-} from '../components/Text'
+import { StText } from '../components/Text'
 import Footer from '../components/Footer'
 
 
+
+
+
 const StyledBanner = styled(Banner)`
-  min-height: 50vh;
+  min-height: ${bannerHeights[1]};
 `
 
+const ListItemRoot = styled(Box)`
+  border-bottom: 1px solid ${colors.text10};
 
-const Test = (props) => (
+  &:first-child {
+    padding-top: 0;
+  }
+`;
+
+const ListItem = props => (
+  <ListItemRoot py={3}>
+    <Flex
+      align={[ 'flex-start', 'flex-end' ]}
+      direction={[ 'column', 'row' ]}>
+      <Link href='#'>
+        <a>
+          <StText
+            is='span'
+            color='text'
+            displayFont
+            fontSize={[ 4, 5 ]}
+            mr={3}>
+            {props.headline}
+          </StText>
+          <StText
+            is='span'
+            color='text70'
+            fontSize={[ 3, 4 ]}>
+            {props.subheadline}
+          </StText>
+        </a>
+      </Link>
+    </Flex>
+  </ListItemRoot>
+);
+
+const Home = (props) => (
   <Layout>
-
-    <StyledBanner py={6}>
+    <StyledBanner py={7}>
       <Container w={1}>
-        <Column w={[ 1, 7/12 ]} mx={-3}>
+        <Box w={[ 1, 7/12 ]}>
           <Overhead children='Info on the go' />
-          <StyledHeading is='h1' color='brand' f={[ 6, 7 ]} mb={3} children='Strata forms and fact sheets.' />
-          <StyledSubhead color='text70' f={[ 4, 5 ]} mb={3} children='Everything you might need to know about your Strata management.' />
-          <StText children='This is styled rebass text.' />
-          <StTextBook children='This is styled rebass text, book weight.' />
-          <Text bold children='This is rebass text with a bold attr themed to be weight 500.' />
-        </Column>
+          <StHeading is='h1' color='brand' f={[ 6, 7 ]} mb={4} children='Strata forms and fact sheets.' />
+          <StSubhead color='text70' f={[ 4, 5 ]} mb={4} children='Readily available PDF downloads to help your Strata management.' />
+        </Box>
       </Container>
     </StyledBanner>
+
+    <Container>
+      <Overhead color='text' children='Forms' />
+      <ListItem
+        headline='Proxy nomination'
+        subheadline='Nominate your proxy options'
+      />
+    </Container>
 
     <Footer />
   </Layout>
 )
 
-export default Test
+export default Home
